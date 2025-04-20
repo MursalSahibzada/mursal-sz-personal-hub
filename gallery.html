@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | My Personal Info Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+     background-color: #fdf5e6; /* soft parchment color */
+     margin: 0;
+     font-family: Arial, sans-serif;
+    }
+    nav {
+      background-color: #333;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    figure {
+      margin: 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    figcaption {
+      text-align: center;
+      padding-top: 5px;
+      font-style: italic;
+    }
+    .back-link {
+      margin-top: 30px;
+      display: block;
+      text-align: center;
+    }
+    .photo-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-frame {
+  width: 200px;
+  padding: 10px;
+  border: 8px double #8B4513;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  background-color: #fdf5e6;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.site-footer {
+  background-color: #8B4513;  /* Choose your color */
+  color: white;               /* Text color */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about-me.html">About Me</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<div class="container">
+  <!-- Heading -->
+  <h1>My Gallery</h1>
+
+  <!-- Image Grid -->
+  <div class="photo-gallery">
+    <div class="photo-frame">
+    <figure>
+      <img src="images/forest path.jpg" alt="Forest path">
+      <figcaption>A peaceful walk through the forest.</figcaption>
+    </figure>
+    </div>
+    <div class="photo-frame">
+    <figure>
+      <img src="images/book and coffee.jpg" alt="Book and coffee">
+      <figcaption>My favorite way to relax—reading with a warm drink.</figcaption>
+    </figure>
+    </div>
+    <div class="photo-frame">
+    <figure>
+      <img src="images/coding in computer.jpg" alt="Coding on laptop">
+      <figcaption>Diving into web development projects.</figcaption>
+    </figure>
+    </div>
+    <div class="photo-frame">
+    <figure>
+      <img src="images/water project.jpg" alt="Water engineering sketch">
+      <figcaption>Sketching ideas for a sustainable water system.</figcaption>
+    </figure>
+  </div>
+  </div>
+  <!-- Link Back to Home -->
+  <a href="index.html" class="back-link">← Back to Home</a>
+</div>
+<footer class="site-footer">
+  <p>&copy; 2025 My Personal Info Hub | All rights reserved.</p>
+</footer>
+</body>
+</html>

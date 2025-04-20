@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me | My Personal Info Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #fdf5e6; /* soft parchment color */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      background-color: #333;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+    .inline {
+      width: auto;
+      margin-right: 10px;
+    }
+    .note {
+      margin-top: 20px;
+    }
+    .site-footer {
+  background-color: #8B4513;  /* Choose your color */
+  color: white;               /* Text color */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about-me.html">About Me</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <div class="container">
+    <!-- Contact Heading -->
+    <h1>Contact Me</h1>
+<!-- Contact Form -->
+<form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <!-- Gender Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male" class="inline" required>
+    <label for="male" class="inline">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female" class="inline" required>
+    <label for="female" class="inline">Female</label>
+
+    <input type="radio" id="other" name="gender" value="Other" class="inline" required>
+    <label for="other" class="inline">Other</label>
+
+    <!-- Interests Checkboxes -->
+    <label>Interests:</label>
+    <input type="checkbox" id="nature" name="interests" value="Nature" class="inline">
+    <label for="nature" class="inline">Nature</label>
+    <input type="checkbox" id="coding" name="interests" value="Coding" class="inline">
+    <label for="coding" class="inline">Coding</label>
+
+    <input type="checkbox" id="reading" name="interests" value="Reading" class="inline">
+    <label for="reading" class="inline">Reading</label>
+
+    <input type="checkbox" id="music" name="interests" value="Music" class="inline">
+    <label for="music" class="inline">Classical Music</label>
+   <!-- Submit Button -->
+    <br><br>
+    <input type="submit" value="Send Message">
+  </form>
+    <!-- Extra Note -->
+  <p class="note">Prefer email? You can also reach me at: mursal.sz2000@gmail.com
+    <a href="mailto:mursal.sz2000@mgmail.com">mursal.sz2000@gmail.com</a>
+  </p>
+</div>
+<footer class="site-footer">
+  <p>&copy; 2025 My Personal Info Hub | All rights reserved.</p>
+</footer>
+</body>
+</html>
